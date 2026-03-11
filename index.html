@@ -3,22 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Biogenix | Capacitación en Biotecnología</title>
+  <title>Biogenix | Capacitación online en biotecnología</title>
   <meta name="description" content="Biogenix ofrece capacitación online en biotecnología con certificado con valor curricular, QR escaneable y folio de respaldo." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="header">
     <div class="container nav">
-      <a href="#inicio" class="brand">
-        <img src="assets/img/logo.jpeg" alt="Biogenix logo">
-        <span>BIOGENIX</span>
+      <a href="#inicio" class="brand" aria-label="Ir al inicio">
+        <img src="assets/logo/logo.jpeg" alt="Logo Biogenix" class="brand-logo" />
+        <span class="brand-name">BIOGENIX</span>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
       <nav class="menu" id="menu">
         <a href="#inicio">Inicio</a>
@@ -33,51 +35,33 @@
 
   <main>
     <section id="inicio" class="hero">
-      <div class="hero-bg">
-        <img src="assets/img/banner.jpg" alt="Banner Biogenix">
-      </div>
       <div class="hero-overlay"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <span class="hero-badge">Biotecnología • Ciencia • Innovación</span>
-          <h1>Capacitación online en biotecnología con imagen moderna y profesional</h1>
-          <p>
-            En Biogenix impulsamos soluciones educativas para quienes buscan crecer en salud,
-            agricultura y medio ambiente con una experiencia clara, actual y especializada.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#cursos">Ver cursos</a>
-            <a class="btn btn-secondary" href="https://wa.me/5212971061800?text=Hola,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Biogenix" target="_blank" rel="noopener noreferrer">Solicitar información</a>
-          </div>
-        </div>
-
-        <div class="hero-panel reveal">
-          <div class="glass-card">
-            <span class="mini-tag">Formación especializada</span>
-            <h3>Certificación profesional</h3>
-            <ul>
-              <li>+500 alumnos</li>
-              <li>+20 cursos online</li>
-              <li>Valor curricular</li>
-              <li>QR escaneable y folio</li>
-            </ul>
-          </div>
+      <div class="container hero-content reveal active">
+        <span class="hero-chip">Biotecnología • Ciencia • Innovación</span>
+        <h1>BIOGENIX<br><span>Capacitación online en biotecnología</span></h1>
+        <p>
+          En Biogenix impulsamos soluciones educativas para quienes buscan crecer
+          en salud, agricultura y medio ambiente con una experiencia clara, actual y especializada.
+        </p>
+        <div class="hero-actions">
+          <a href="#cursos" class="btn btn-primary">Ver cursos</a>
+          <a href="#contacto" class="btn btn-secondary">Solicitar información</a>
         </div>
       </div>
     </section>
 
-    <section class="stats-section">
+    <section class="stats section-small">
       <div class="container stats-grid reveal">
         <article class="stat-card">
-          <h3 class="counter" data-target="500">0</h3>
+          <h2 class="counter" data-target="500">0</h2>
           <p>Alumnos</p>
         </article>
         <article class="stat-card">
-          <h3 class="counter" data-target="20">0</h3>
+          <h2 class="counter" data-target="20">0</h2>
           <p>Cursos Online</p>
         </article>
         <article class="stat-card">
-          <h3>100%</h3>
+          <h2>100%</h2>
           <p>Modalidad Online</p>
         </article>
       </div>
@@ -86,17 +70,17 @@
     <section id="nosotros" class="section section-soft">
       <div class="container">
         <div class="section-heading reveal">
-          <span class="section-tag">¿Quiénes somos?</span>
-          <h2>Biogenix transforma la ciencia en formación útil y actual</h2>
+          <span class="section-tag">Biogenix</span>
+          <h2>¿Quiénes somos?</h2>
           <p>
-            En Biogenix, creemos en el poder de la Biotecnología para transformar la ciencia y convertirla en soluciones innovadoras para los sectores de la salud, la agricultura y el medio ambiente.
+            En Biogenix, creemos en el poder de la Biotecnología para transformar la ciencia
+            y convertirla en soluciones innovadoras para los sectores de la salud, la agricultura y el medio ambiente.
           </p>
           <p>
-            Nuestro enfoque se centra en la aplicación práctica de la biotecnología para abordar los retos más urgentes, mejorando la calidad de vida y contribuyendo al bienestar global.
+            Nuestro enfoque se centra en la aplicación práctica de la biotecnología para abordar
+            los retos más urgentes, mejorando la calidad de vida y contribuyendo al bienestar global.
           </p>
-          <p>
-            ¡Únete a nosotros y sé parte del cambio! 🌍💚
-          </p>
+          <p>¡Únete a nosotros y sé parte del cambio! 🌍💚</p>
         </div>
       </div>
     </section>
@@ -105,284 +89,107 @@
       <div class="container">
         <div class="section-heading reveal">
           <span class="section-tag">Cursos</span>
-          <h2>Capacitación especializada en modalidad online</h2>
+          <h2>Formación especializada</h2>
           <p>
-            Todos nuestros cursos incluyen certificado con valor curricular, QR escaneable, folio de respaldo y acceso 100% online.
+            Todos nuestros cursos se imparten en modalidad online e incluyen certificado con valor curricular,
+            QR escaneable y folio de respaldo. Da clic en inscribirme y te redirigimos por WhatsApp.
           </p>
         </div>
 
         <div class="courses-grid">
-
           <article class="course-card reveal">
-            <div class="course-image-wrap">
-              <img src="assets/img/courses/curso-1.jpg" alt="Análisis de Datos Biológicos">
-            </div>
-            <div class="course-content">
+            <img src="assets/cursos/datos.jpg" alt="Análisis de Datos Biológicos" class="course-image" />
+            <div class="course-body">
               <span class="course-mode">Modalidad Online</span>
               <h3>Análisis de Datos Biológicos</h3>
-              <p>Aprende a interpretar información biotecnológica y convertir datos en decisiones con enfoque científico.</p>
+              <p>Aprende herramientas para interpretar datos biotecnológicos y tomar decisiones basadas en evidencia.</p>
               <ul class="course-features">
                 <li>Certificado con valor curricular</li>
                 <li>QR escaneable</li>
                 <li>Folio de respaldo</li>
                 <li>Acceso 100% online</li>
               </ul>
-              <a class="course-btn" href="https://wa.me/5212971061800?text=Hola%2C%20quiero%20inscribirme%20al%20curso%20de%20An%C3%A1lisis%20de%20Datos%20Biol%C3%B3gicos%20de%20Biogenix." target="_blank" rel="noopener noreferrer">Inscribirme</a>
+              <a class="course-btn" target="_blank" href="https://wa.me/5212971061800?text=Hola,%20quiero%20inscribirme%20al%20curso%20de%20An%C3%A1lisis%20de%20Datos%20Biol%C3%B3gicos">Inscribirme</a>
             </div>
           </article>
+
           <article class="course-card reveal">
-            <div class="course-image-wrap">
-              <img src="assets/img/courses/curso-2.jpg" alt="Cultivo Celular">
-            </div>
-            <div class="course-content">
+            <img src="assets/cursos/cultivo-celular.jpg" alt="Cultivo Celular" class="course-image" />
+            <div class="course-body">
               <span class="course-mode">Modalidad Online</span>
               <h3>Cultivo Celular</h3>
-              <p>Conoce principios, técnicas y aplicaciones del trabajo con células en laboratorio moderno.</p>
+              <p>Conoce principios, técnicas y aplicaciones del trabajo con células en laboratorio.</p>
               <ul class="course-features">
                 <li>Certificado con valor curricular</li>
                 <li>QR escaneable</li>
                 <li>Folio de respaldo</li>
                 <li>Acceso 100% online</li>
               </ul>
-              <a class="course-btn" href="https://wa.me/5212971061800?text=Hola%2C%20quiero%20inscribirme%20al%20curso%20de%20Cultivo%20Celular%20de%20Biogenix." target="_blank" rel="noopener noreferrer">Inscribirme</a>
+              <a class="course-btn" target="_blank" href="https://wa.me/5212971061800?text=Hola,%20quiero%20inscribirme%20al%20curso%20de%20Cultivo%20Celular">Inscribirme</a>
             </div>
           </article>
+
           <article class="course-card reveal">
-            <div class="course-image-wrap">
-              <img src="assets/img/courses/curso-3.jpg" alt="Microbiología Aplicada">
-            </div>
-            <div class="course-content">
+            <img src="assets/cursos/microbiologia.jpg" alt="Microbiología Aplicada" class="course-image" />
+            <div class="course-body">
               <span class="course-mode">Modalidad Online</span>
               <h3>Microbiología Aplicada</h3>
-              <p>Explora el papel de los microorganismos y su impacto en salud, ciencia y procesos productivos.</p>
+              <p>Explora el papel de los microorganismos y su aplicación en ciencia, salud y procesos productivos.</p>
               <ul class="course-features">
                 <li>Certificado con valor curricular</li>
                 <li>QR escaneable</li>
                 <li>Folio de respaldo</li>
                 <li>Acceso 100% online</li>
               </ul>
-              <a class="course-btn" href="https://wa.me/5212971061800?text=Hola%2C%20quiero%20inscribirme%20al%20curso%20de%20Microbiolog%C3%ADa%20Aplicada%20de%20Biogenix." target="_blank" rel="noopener noreferrer">Inscribirme</a>
+              <a class="course-btn" target="_blank" href="https://wa.me/5212971061800?text=Hola,%20quiero%20inscribirme%20al%20curso%20de%20Microbiolog%C3%ADa%20Aplicada">Inscribirme</a>
             </div>
           </article>
+
           <article class="course-card reveal">
-            <div class="course-image-wrap">
-              <img src="assets/img/courses/curso-4.jpg" alt="Bioplásticos">
-            </div>
-            <div class="course-content">
+            <img src="assets/cursos/bioplasticos.jpg" alt="Bioplásticos" class="course-image" />
+            <div class="course-body">
               <span class="course-mode">Modalidad Online</span>
               <h3>Bioplásticos</h3>
-              <p>Descubre materiales sostenibles y su relación con innovación, ambiente y desarrollo biotecnológico.</p>
+              <p>Descubre alternativas sostenibles y el potencial biotecnológico de nuevos materiales biodegradables.</p>
               <ul class="course-features">
                 <li>Certificado con valor curricular</li>
                 <li>QR escaneable</li>
                 <li>Folio de respaldo</li>
                 <li>Acceso 100% online</li>
               </ul>
-              <a class="course-btn" href="https://wa.me/5212971061800?text=Hola%2C%20quiero%20inscribirme%20al%20curso%20de%20Biopl%C3%A1sticos%20de%20Biogenix." target="_blank" rel="noopener noreferrer">Inscribirme</a>
+              <a class="course-btn" target="_blank" href="https://wa.me/5212971061800?text=Hola,%20quiero%20inscribirme%20al%20curso%20de%20Biopl%C3%A1sticos">Inscribirme</a>
             </div>
           </article>
+
           <article class="course-card reveal">
-            <div class="course-image-wrap">
-              <img src="assets/img/courses/curso-5.jpg" alt="Genética Molecular">
-            </div>
-            <div class="course-content">
+            <img src="assets/cursos/genetica.jpg" alt="Genética Molecular" class="course-image" />
+            <div class="course-body">
               <span class="course-mode">Modalidad Online</span>
               <h3>Genética Molecular</h3>
-              <p>Fortalece tus bases en genética y comprende herramientas clave del análisis molecular.</p>
+              <p>Fortalece tus bases en genética aplicada y su utilidad dentro de la biotecnología moderna.</p>
               <ul class="course-features">
                 <li>Certificado con valor curricular</li>
                 <li>QR escaneable</li>
                 <li>Folio de respaldo</li>
                 <li>Acceso 100% online</li>
               </ul>
-              <a class="course-btn" href="https://wa.me/5212971061800?text=Hola%2C%20quiero%20inscribirme%20al%20curso%20de%20Gen%C3%A9tica%20Molecular%20de%20Biogenix." target="_blank" rel="noopener noreferrer">Inscribirme</a>
+              <a class="course-btn" target="_blank" href="https://wa.me/5212971061800?text=Hola,%20quiero%20inscribirme%20al%20curso%20de%20Gen%C3%A9tica%20Molecular">Inscribirme</a>
             </div>
           </article>
+
           <article class="course-card reveal">
-            <div class="course-image-wrap">
-              <img src="assets/img/courses/curso-6.jpg" alt="Biosensores">
-            </div>
-            <div class="course-content">
+            <img src="assets/cursos/biosensores.jpg" alt="Biosensores" class="course-image" />
+            <div class="course-body">
               <span class="course-mode">Modalidad Online</span>
               <h3>Biosensores</h3>
-              <p>Conoce tecnologías de detección y monitoreo aplicadas a entornos clínicos, ambientales e industriales.</p>
+              <p>Conoce el diseño y aplicación de herramientas biotecnológicas para detección y monitoreo.</p>
               <ul class="course-features">
                 <li>Certificado con valor curricular</li>
                 <li>QR escaneable</li>
                 <li>Folio de respaldo</li>
                 <li>Acceso 100% online</li>
               </ul>
-              <a class="course-btn" href="https://wa.me/5212971061800?text=Hola%2C%20quiero%20inscribirme%20al%20curso%20de%20Biosensores%20de%20Biogenix." target="_blank" rel="noopener noreferrer">Inscribirme</a>
-            </div>
-          </article>
-          <article class="course-card reveal">
-            <div class="course-image-wrap">
-              <img src="assets/img/courses/curso-7.jpg" alt="Huella Genética">
-            </div>
-            <div class="course-content">
-              <span class="course-mode">Modalidad Online</span>
-              <h3>Huella Genética</h3>
-              <p>Aprende fundamentos del análisis genético con aplicaciones científicas y de identificación.</p>
-              <ul class="course-features">
-                <li>Certificado con valor curricular</li>
-                <li>QR escaneable</li>
-                <li>Folio de respaldo</li>
-                <li>Acceso 100% online</li>
-              </ul>
-              <a class="course-btn" href="https://wa.me/5212971061800?text=Hola%2C%20quiero%20inscribirme%20al%20curso%20de%20Huella%20Gen%C3%A9tica%20de%20Biogenix." target="_blank" rel="noopener noreferrer">Inscribirme</a>
-            </div>
-          </article>
-          <article class="course-card reveal">
-            <div class="course-image-wrap">
-              <img src="assets/img/courses/curso-8.jpg" alt="Diseño de Primers">
-            </div>
-            <div class="course-content">
-              <span class="course-mode">Modalidad Online</span>
-              <h3>Diseño de Primers</h3>
-              <p>Desarrolla criterios para el diseño de iniciadores y mejora tus procesos de biología molecular.</p>
-              <ul class="course-features">
-                <li>Certificado con valor curricular</li>
-                <li>QR escaneable</li>
-                <li>Folio de respaldo</li>
-                <li>Acceso 100% online</li>
-              </ul>
-              <a class="course-btn" href="https://wa.me/5212971061800?text=Hola%2C%20quiero%20inscribirme%20al%20curso%20de%20Dise%C3%B1o%20de%20Primers%20de%20Biogenix." target="_blank" rel="noopener noreferrer">Inscribirme</a>
-            </div>
-          </article>
-          <article class="course-card reveal">
-            <div class="course-image-wrap">
-              <img src="assets/img/courses/curso-9.jpg" alt="Quorum Sensing">
-            </div>
-            <div class="course-content">
-              <span class="course-mode">Modalidad Online</span>
-              <h3>Quorum Sensing</h3>
-              <p>Comprende la comunicación bacteriana y su relevancia en microbiología e investigación aplicada.</p>
-              <ul class="course-features">
-                <li>Certificado con valor curricular</li>
-                <li>QR escaneable</li>
-                <li>Folio de respaldo</li>
-                <li>Acceso 100% online</li>
-              </ul>
-              <a class="course-btn" href="https://wa.me/5212971061800?text=Hola%2C%20quiero%20inscribirme%20al%20curso%20de%20Quorum%20Sensing%20de%20Biogenix." target="_blank" rel="noopener noreferrer">Inscribirme</a>
-            </div>
-          </article>
-          <article class="course-card reveal">
-            <div class="course-image-wrap">
-              <img src="assets/img/courses/curso-10.jpg" alt="Tratamiento Biotecnológico de Aguas">
-            </div>
-            <div class="course-content">
-              <span class="course-mode">Modalidad Online</span>
-              <h3>Tratamiento Biotecnológico de Aguas</h3>
-              <p>Explora soluciones biotecnológicas orientadas al saneamiento y cuidado del medio ambiente.</p>
-              <ul class="course-features">
-                <li>Certificado con valor curricular</li>
-                <li>QR escaneable</li>
-                <li>Folio de respaldo</li>
-                <li>Acceso 100% online</li>
-              </ul>
-              <a class="course-btn" href="https://wa.me/5212971061800?text=Hola%2C%20quiero%20inscribirme%20al%20curso%20de%20Tratamiento%20Biotecnol%C3%B3gico%20de%20Aguas%20de%20Biogenix." target="_blank" rel="noopener noreferrer">Inscribirme</a>
-            </div>
-          </article>
-          <article class="course-card reveal">
-            <div class="course-image-wrap">
-              <img src="assets/img/courses/curso-11.jpg" alt="Emulsiones y Bioprocesos">
-            </div>
-            <div class="course-content">
-              <span class="course-mode">Modalidad Online</span>
-              <h3>Emulsiones y Bioprocesos</h3>
-              <p>Conoce principios fisicoquímicos y aplicaciones en formulación, estabilidad y procesos.</p>
-              <ul class="course-features">
-                <li>Certificado con valor curricular</li>
-                <li>QR escaneable</li>
-                <li>Folio de respaldo</li>
-                <li>Acceso 100% online</li>
-              </ul>
-              <a class="course-btn" href="https://wa.me/5212971061800?text=Hola%2C%20quiero%20inscribirme%20al%20curso%20de%20Emulsiones%20y%20Bioprocesos%20de%20Biogenix." target="_blank" rel="noopener noreferrer">Inscribirme</a>
-            </div>
-          </article>
-          <article class="course-card reveal">
-            <div class="course-image-wrap">
-              <img src="assets/img/courses/curso-12.jpg" alt="Biogás">
-            </div>
-            <div class="course-content">
-              <span class="course-mode">Modalidad Online</span>
-              <h3>Biogás</h3>
-              <p>Descubre el potencial energético de los procesos biológicos y su uso en sostenibilidad.</p>
-              <ul class="course-features">
-                <li>Certificado con valor curricular</li>
-                <li>QR escaneable</li>
-                <li>Folio de respaldo</li>
-                <li>Acceso 100% online</li>
-              </ul>
-              <a class="course-btn" href="https://wa.me/5212971061800?text=Hola%2C%20quiero%20inscribirme%20al%20curso%20de%20Biog%C3%A1s%20de%20Biogenix." target="_blank" rel="noopener noreferrer">Inscribirme</a>
-            </div>
-          </article>
-          <article class="course-card reveal">
-            <div class="course-image-wrap">
-              <img src="assets/img/courses/curso-13.jpg" alt="Biotecnología Ambiental">
-            </div>
-            <div class="course-content">
-              <span class="course-mode">Modalidad Online</span>
-              <h3>Biotecnología Ambiental</h3>
-              <p>Integra herramientas biotecnológicas para la conservación y mejora ambiental.</p>
-              <ul class="course-features">
-                <li>Certificado con valor curricular</li>
-                <li>QR escaneable</li>
-                <li>Folio de respaldo</li>
-                <li>Acceso 100% online</li>
-              </ul>
-              <a class="course-btn" href="https://wa.me/5212971061800?text=Hola%2C%20quiero%20inscribirme%20al%20curso%20de%20Biotecnolog%C3%ADa%20Ambiental%20de%20Biogenix." target="_blank" rel="noopener noreferrer">Inscribirme</a>
-            </div>
-          </article>
-          <article class="course-card reveal">
-            <div class="course-image-wrap">
-              <img src="assets/img/courses/curso-14.jpeg" alt="Biología Molecular Aplicada">
-            </div>
-            <div class="course-content">
-              <span class="course-mode">Modalidad Online</span>
-              <h3>Biología Molecular Aplicada</h3>
-              <p>Refuerza técnicas modernas con aplicaciones en diagnóstico, investigación y laboratorio.</p>
-              <ul class="course-features">
-                <li>Certificado con valor curricular</li>
-                <li>QR escaneable</li>
-                <li>Folio de respaldo</li>
-                <li>Acceso 100% online</li>
-              </ul>
-              <a class="course-btn" href="https://wa.me/5212971061800?text=Hola%2C%20quiero%20inscribirme%20al%20curso%20de%20Biolog%C3%ADa%20Molecular%20Aplicada%20de%20Biogenix." target="_blank" rel="noopener noreferrer">Inscribirme</a>
-            </div>
-          </article>
-          <article class="course-card reveal">
-            <div class="course-image-wrap">
-              <img src="assets/img/courses/curso-15.jpeg" alt="Cultivo de Tejidos Vegetales">
-            </div>
-            <div class="course-content">
-              <span class="course-mode">Modalidad Online</span>
-              <h3>Cultivo de Tejidos Vegetales</h3>
-              <p>Aprende bases para la propagación y manejo de tejidos vegetales con enfoque práctico.</p>
-              <ul class="course-features">
-                <li>Certificado con valor curricular</li>
-                <li>QR escaneable</li>
-                <li>Folio de respaldo</li>
-                <li>Acceso 100% online</li>
-              </ul>
-              <a class="course-btn" href="https://wa.me/5212971061800?text=Hola%2C%20quiero%20inscribirme%20al%20curso%20de%20Cultivo%20de%20Tejidos%20Vegetales%20de%20Biogenix." target="_blank" rel="noopener noreferrer">Inscribirme</a>
-            </div>
-          </article>
-          <article class="course-card reveal">
-            <div class="course-image-wrap">
-              <img src="assets/img/courses/curso-16.jpeg" alt="Introducción a la Bioinformática">
-            </div>
-            <div class="course-content">
-              <span class="course-mode">Modalidad Online</span>
-              <h3>Introducción a la Bioinformática</h3>
-              <p>Conoce herramientas digitales para el análisis de secuencias y datos biológicos.</p>
-              <ul class="course-features">
-                <li>Certificado con valor curricular</li>
-                <li>QR escaneable</li>
-                <li>Folio de respaldo</li>
-                <li>Acceso 100% online</li>
-              </ul>
-              <a class="course-btn" href="https://wa.me/5212971061800?text=Hola%2C%20quiero%20inscribirme%20al%20curso%20de%20Introducci%C3%B3n%20a%20la%20Bioinform%C3%A1tica%20de%20Biogenix." target="_blank" rel="noopener noreferrer">Inscribirme</a>
+              <a class="course-btn" target="_blank" href="https://wa.me/5212971061800?text=Hola,%20quiero%20inscribirme%20al%20curso%20de%20Biosensores">Inscribirme</a>
             </div>
           </article>
         </div>
@@ -393,12 +200,14 @@
       <div class="container">
         <div class="section-heading reveal">
           <span class="section-tag">Galería</span>
-          <h2>Comunidad, aprendizaje y crecimiento</h2>
-          <p>Una muestra visual del estilo, presencia y profesionalismo de Biogenix.</p>
+          <h2>Momentos Biogenix</h2>
+          <p>Una muestra visual del estilo, presencia y crecimiento de nuestra comunidad.</p>
         </div>
-
         <div class="gallery-grid">
-          <img class="reveal" src="assets/img/gallery/galeria-1.jpg" alt="Galería Biogenix 1"><img class="reveal" src="assets/img/gallery/galeria-2.jpg" alt="Galería Biogenix 2"><img class="reveal" src="assets/img/gallery/galeria-3.jpg" alt="Galería Biogenix 3"><img class="reveal" src="assets/img/gallery/galeria-4.jpg" alt="Galería Biogenix 4"><img class="reveal" src="assets/img/gallery/galeria-5.jpg" alt="Galería Biogenix 5"><img class="reveal" src="assets/img/gallery/galeria-6.jpg" alt="Galería Biogenix 6">
+          <img class="reveal" src="assets/galeria/1.jpg" alt="Galería Biogenix 1" />
+          <img class="reveal" src="assets/galeria/2.jpg" alt="Galería Biogenix 2" />
+          <img class="reveal" src="assets/galeria/3.jpg" alt="Galería Biogenix 3" />
+          <img class="reveal" src="assets/galeria/4.jpg" alt="Galería Biogenix 4" />
         </div>
       </div>
     </section>
@@ -407,31 +216,32 @@
       <div class="container">
         <div class="section-heading reveal">
           <span class="section-tag">Testimonios</span>
-          <h2>Opiniones que respaldan nuestra experiencia</h2>
-          <p>La confianza de nuestros alumnos fortalece la imagen y seriedad de cada capacitación.</p>
+          <h2>Opiniones de nuestra comunidad</h2>
+          <p>La confianza de nuestros alumnos refleja el compromiso y la calidad de cada capacitación.</p>
         </div>
-
-        <div class="testimonials-grid">
-          <article class="testimonial-card reveal"><img src="assets/img/testimonials/testimonio-1.png" alt="Testimonio 1"></article><article class="testimonial-card reveal"><img src="assets/img/testimonials/testimonio-2.png" alt="Testimonio 2"></article><article class="testimonial-card reveal"><img src="assets/img/testimonials/testimonio-3.png" alt="Testimonio 3"></article><article class="testimonial-card reveal"><img src="assets/img/testimonials/testimonio-4.png" alt="Testimonio 4"></article><article class="testimonial-card reveal"><img src="assets/img/testimonials/testimonio-5.png" alt="Testimonio 5"></article><article class="testimonial-card reveal"><img src="assets/img/testimonials/testimonio-6.png" alt="Testimonio 6"></article>
+        <div class="testimonials-grid testimonials-images">
+          <img class="reveal" src="assets/testimonios/1.png" alt="Testimonio 1" />
+          <img class="reveal" src="assets/testimonios/2.png" alt="Testimonio 2" />
+          <img class="reveal" src="assets/testimonios/3.png" alt="Testimonio 3" />
+          <img class="reveal" src="assets/testimonios/4.png" alt="Testimonio 4" />
+          <img class="reveal" src="assets/testimonios/5.png" alt="Testimonio 5" />
+          <img class="reveal" src="assets/testimonios/6.png" alt="Testimonio 6" />
         </div>
       </div>
     </section>
 
-    <section id="contacto" class="section contact-section">
+    <section id="contacto" class="section">
       <div class="container">
         <div class="contact-box reveal">
           <span class="section-tag contact-tag">Contacto</span>
-          <h2>Inscripciones y atención personalizada</h2>
+          <h2>¿Quieres inscribirte o recibir más información?</h2>
           <p>
-            Escríbenos directamente por WhatsApp para recibir información de cursos, costos, fechas, certificación y próximos lanzamientos.
+            Escríbenos por WhatsApp y recibe atención personalizada sobre cursos, certificación y próximos programas.
           </p>
           <div class="contact-actions">
-            <a class="btn btn-light" href="https://wa.me/5212971061800?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20los%20cursos%20de%20Biogenix" target="_blank" rel="noopener noreferrer">Contactar por WhatsApp</a>
-            <a class="btn btn-outline-light" href="https://www.instagram.com/biogenix_505/" target="_blank" rel="noopener noreferrer">Instagram</a>
-          </div>
-          <div class="contact-mini">
-            <a href="https://www.facebook.com/profile.php?id=61581077249185" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="mailto:capitallaboratorio13@gmail.com">Correo</a>
+            <a class="btn btn-light" target="_blank" href="https://wa.me/5212971061800?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20los%20cursos%20de%20Biogenix">Contactar por WhatsApp</a>
+            <a class="btn btn-outline-light" target="_blank" href="https://www.instagram.com/biogenix_505/">Instagram</a>
+            <a class="btn btn-outline-light" target="_blank" href="https://www.facebook.com/profile.php?id=61581077249185">Facebook</a>
           </div>
         </div>
       </div>
@@ -441,15 +251,13 @@
   <footer class="footer">
     <div class="container footer-wrap">
       <p>© 2026 Biogenix. Todos los derechos reservados.</p>
-      <div class="footer-links">
-        <a href="https://www.facebook.com/profile.php?id=61581077249185" target="_blank" rel="noopener noreferrer">Facebook</a>
-        <a href="https://www.instagram.com/biogenix_505/" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="mailto:capitallaboratorio13@gmail.com">Correo</a>
-      </div>
+      <a href="mailto:capitallaboratorio13@gmail.com">capitallaboratorio13@gmail.com</a>
     </div>
   </footer>
 
-  <a class="whatsapp-float" href="https://wa.me/5212971061800?text=Hola,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Biogenix" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WhatsApp</a>
+  <a href="https://wa.me/5212971061800?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20Biogenix" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    WhatsApp
+  </a>
 
   <script src="script.js"></script>
 </body>
